@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using WebApi.Core.Dto;
+using WebApi.Core.Model.Models;
 
 namespace WebApi.Core.Interfaces
 {
@@ -8,5 +9,7 @@ namespace WebApi.Core.Interfaces
         string GetData(int id);
 
         List<TestDto> GetAll();
+
+        IEnumerable<User> Get();
     }
 }

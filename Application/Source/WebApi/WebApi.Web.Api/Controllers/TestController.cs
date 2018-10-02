@@ -1,6 +1,6 @@
-﻿using System.Web.Mvc;
+﻿using System.Collections;
+using System.Web.Mvc;
 using WebApi.Core.Interfaces;
-using WebApi.Core.Service;
 
 namespace WebApi.Web.Api.Controllers
 {
@@ -13,13 +13,16 @@ namespace WebApi.Web.Api.Controllers
 
         private readonly ITestService _testService;
 
-        public string Index()
+        public IEnumerable Index()
         {
-            ITestService test = new TestService();
+            //ITestService test = new TestService();
 
-            var result = test.GetData(1);
+            //var result = _testService.GetData(1);
 
-            var data = test.GetAll();
+            var result = _testService.Get();
+
+
+            var data = _testService.GetAll();
 
             return result;
         }

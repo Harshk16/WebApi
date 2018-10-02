@@ -13,7 +13,7 @@ namespace WebApi.Web.Api
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            AutoFacConfig.RegisterComponents();
+            AutoFacConfig.ConfigureDependencyInjection();
         }
     }
 }

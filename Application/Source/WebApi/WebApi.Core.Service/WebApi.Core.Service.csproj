@@ -56,6 +56,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\WebApi.Core.Model\WebApi.Core.Model.csproj">
+      <Project>{DE0DC9B3-F06F-415E-95EF-AA9CDFDB6FD7}</Project>
+      <Name>WebApi.Core.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WebApi.Core\WebApi.Core.csproj">
       <Project>{103A2AFA-28CE-4A3C-8526-684806206F1E}</Project>
       <Name>WebApi.Core</Name>

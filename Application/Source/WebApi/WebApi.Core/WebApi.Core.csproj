@@ -55,5 +55,11 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebApi.Core.Model\WebApi.Core.Model.csproj">
+      <Project>{DE0DC9B3-F06F-415E-95EF-AA9CDFDB6FD7}</Project>
+      <Name>WebApi.Core.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

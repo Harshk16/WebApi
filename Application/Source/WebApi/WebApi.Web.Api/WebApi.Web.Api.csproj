@@ -221,6 +221,10 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\WebApi.Core.Model\WebApi.Core.Model.csproj">
+      <Project>{DE0DC9B3-F06F-415E-95EF-AA9CDFDB6FD7}</Project>
+      <Name>WebApi.Core.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WebApi.Core.Service\WebApi.Core.Service.csproj">
       <Project>{81D013B0-9B70-4975-8266-862D26C2B482}</Project>
       <Name>WebApi.Core.Service</Name>
@@ -228,6 +232,10 @@
     <ProjectReference Include="..\WebApi.Core\WebApi.Core.csproj">
       <Project>{103A2AFA-28CE-4A3C-8526-684806206F1E}</Project>
       <Name>WebApi.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebApi.Data\WebApi.Data.csproj">
+      <Project>{20725D6A-3625-4022-9D1C-ABDBC9AA5A0F}</Project>
+      <Name>WebApi.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\WebApi.Infrastructure.DependencyInjection\WebApi.Infrastructure.DependencyInjection.csproj">
       <Project>{E244A8C2-FF26-4C02-A4D4-E1179A6DFAFF}</Project>
